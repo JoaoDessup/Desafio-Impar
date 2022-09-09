@@ -81,3 +81,19 @@ function abrirnOp() {
 function fecharnOp() {
   document.getElementById("modal-nop").style.top = "-100%";
 }
+
+function abrirDel() {
+  document.getElementById("modal-del").style.top = "0";
+  document.getElementById("modal-del").style.right = "0";
+}
+
+function fecharDel() {
+  document.getElementById("modal-del").style.top = "-100%";
+  document.getElementById("modal-del").style.right = "-100%";
+}
+
+function abrirnOpDel() {
+  document.getElementById("modal-del").style.top = "-100%";
+  document.getElementById("modal-del").style.right = "-100%";
+  document.getElementById("modal-nop").style.top = "0";
+}
