@@ -60,3 +60,15 @@ document.addEventListener("keydown", function (e) {
     e.preventDefault();
   }
 });
+
+document.querySelector("#file").addEventListener("change", function () {
+  document.querySelector(".span1").textContent = this.files[0].name;
+});
+
+function abrirModalNew() {
+  document.getElementById("modal-new").style.right = "0";
+}
+
+function fecharModalNew() {
+  document.getElementById("modal-new").style.right = "-100%";
+}

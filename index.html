@@ -33,6 +33,37 @@
         <button class="btn-new" onclick="abrirModalNew()">Novo Card</button>
       </div>
       <div class="container" data-js="container"></div>
+      <div class="bg-modal-new" id="modal-new">
+        <div class="modal-new">
+          <span class="close" onclick="fecharModalNew()">&times;</span>
+          <div class="div-top-new">
+            <img src="images/icone_criar.svg" alt="criar" />
+            <h1>Criar card</h1>
+          </div>
+          <div class="div-new">
+            <div class="div-titulo">
+              <hr />
+              <p>digite um nome para o card</p>
+              <input
+                type="text"
+                name="titulo"
+                class="titulo-inp"
+                placeholder="Digite o título"
+              />
+            </div>
+            <div class="div-arquivo">
+              <p>inclua uma imagem para aparecer no card</p>
+              <input type="file" name="arquivo" id="file" accept="image/*" />
+              <label for="file">
+                <span class="span1">Nenhum arquivo selecionado</span>
+                <span class="span2">Escolher arquivo</span>
+              </label>
+              <hr />
+              <button class="btn-criar" onclick="">Criar card</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <script src="scripts/script.js"></script>
   </body>
