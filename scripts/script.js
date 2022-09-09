@@ -72,3 +72,12 @@ function abrirModalNew() {
 function fecharModalNew() {
   document.getElementById("modal-new").style.right = "-100%";
 }
+
+function abrirnOp() {
+  document.getElementById("modal-new").style.right = "-100%";
+  document.getElementById("modal-nop").style.top = "0";
+}
+
+function fecharnOp() {
+  document.getElementById("modal-nop").style.top = "-100%";
+}
