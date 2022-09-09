@@ -37,3 +37,26 @@ const fetchPokemon = () => {
 };
 
 fetchPokemon();
+
+document.querySelector("#search-input").addEventListener("input", filterList);
+
+function filterList() {
+  const searchInput = document.querySelector("#search-input");
+  const filter = searchInput.value.toLowerCase();
+  const listItems = document.querySelectorAll(".card");
+
+  listItems.forEach((item) => {
+    const text = item.textContent;
+    if (text.toLowerCase().includes(filter.toLowerCase())) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+
+document.addEventListener("keydown", function (e) {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+  }
+});
